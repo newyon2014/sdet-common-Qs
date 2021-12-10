@@ -1,6 +1,7 @@
 package Array.Sort;
 
 public class ThreeNumberSort {
+    // Dutch national flag
     public void printArray(int[] arr) {
         int n = arr.length;
         for (int i = 0; i < n; i++) {
