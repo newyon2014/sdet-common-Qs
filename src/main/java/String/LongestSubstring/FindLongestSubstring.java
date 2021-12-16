@@ -5,7 +5,8 @@ import java.util.LinkedHashMap;
 public class FindLongestSubstring {
     //https://javaconceptoftheday.com/find-longest-substring-without-repeating-characters-java/
 
-    //Write a Java program to find the longest substring from a given string which doesn’t contain any duplicate characters?
+    //Write a Java program to find the longest substring from a given string which does’t contain any duplicate
+    // or repeating characters?
     static void longestSubstring(String inputString) {
         //Convert inputString to charArray
         char[] charArray = inputString.toCharArray();
@@ -25,7 +26,7 @@ public class FindLongestSubstring {
             if (!charPosMap.containsKey(ch)) {
                 charPosMap.put(ch, i);
             }
-            //If ch is already present in charPosMap, reposioning the cursor i to the position of ch and clearing the charPosMap
+            //If ch is already present in charPosMap, repositioning the cursor i to the position of ch and clearing the charPosMap
             else {
                 i = charPosMap.get(ch);
                 charPosMap.clear();
